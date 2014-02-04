@@ -37,7 +37,7 @@ BEGIN {
 }
 
 # ABSTRACT: Perl bindings to libarchive via FFI
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 ffi_lib do {
   my $file = locate_module_share_lib();
@@ -543,7 +543,7 @@ Archive::Libarchive::FFI - Perl bindings to libarchive via FFI
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 
