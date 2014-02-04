@@ -1,0 +1,58 @@
+{
+   "abstract" : "Perl bindings to libarchive via FFI",
+   "author" : [
+      "Graham Ollis <plicease@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 5.012, CPAN::Meta::Converter version 2.133380",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Archive-Libarchive-FFI",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Alien::Libarchive" : "0",
+            "Module::Build" : "0.3601",
+            "Module::Build::FFI" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Alien::Libarchive" : "0",
+            "Exporter::Tidy" : "0",
+            "FFI::Raw" : "0.24",
+            "FFI::Util" : "0",
+            "perl" : "5.010"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/plicease/archive-libarchive-ffi/issues"
+      },
+      "homepage" : "http://perl.wdlabs.com/Archive-Libarchive-FFI/",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/plicease/archive-libarchive-ffi.git",
+         "web" : "https://github.com/plicease/archive-libarchive-ffi"
+      }
+   },
+   "version" : "0.04"
+}
+
