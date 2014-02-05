@@ -24,7 +24,7 @@ inc/SeeAlso.pm
 inc/constants.txt
 inc/extract_string.pl
 inc/functions.txt
-inc/prep.pl
+inc/run/before_build.pl
 lib/Archive/Libarchive/FFI.pm
 lib/Archive/Libarchive/FFI/Callback.pm
 lib/Archive/Libarchive/FFI/Common.pm
