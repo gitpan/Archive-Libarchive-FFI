@@ -3,6 +3,20 @@
 #include <archive.h>
 #include <archive_entry.h>
 
+#if ARCHIVE_VERSION_NUMBER < 3000000
+# if !defined(__LA_INT64_T)
+#  if defined(_WIN32) && !defined(__CYGWIN__)
+#   define __LA_INT64_T    __int64
+#  else
+#   if defined(_SCO_DS)
+#    define __LA_INT64_T    long long
+#   else
+#    define __LA_INT64_T    int64_t
+#   endif
+#  endif
+# endif
+#endif
+
 struct user_data_t;
 
 typedef void (*lookup_cb_t)(struct user_data_t *, __LA_INT64_T);
@@ -81,14 +95,19 @@ my_set_lookup(setf_t *setf, struct archive *archive, lookup_cb_t lookup, cleanup
   return ret;
 }
 
+
+#if defined(HAS_archive_read_disk_set_gname_lookup)
 int
 my_archive_read_disk_set_gname_lookup(struct archive *archive, lookup_cb_t lookup, cleanup_cb_t cleanup)
 {
   return my_set_lookup((setf_t*)archive_read_disk_set_gname_lookup, archive, lookup, cleanup);
 }
+#endif
 
+#if defined(HAS_archive_read_disk_set_uname_lookup)
 int
 my_archive_read_disk_set_uname_lookup(struct archive *archive, lookup_cb_t lookup, cleanup_cb_t cleanup)
 {
   return my_set_lookup((setf_t*)archive_read_disk_set_uname_lookup, archive, lookup, cleanup);
 }
+#endif
