@@ -22,17 +22,30 @@ sub ffi_lib ($)
   my $lib = shift;
   if(ref $lib)
   {
-    if(eval { $lib->isa('Alien::Libarchive') })
+    if(eval { $lib->isa('Alien::Libarchive') } || eval { $lib->isa('Alien::Libarchive::MSWin32') })
     {
-      if($lib->install_type eq 'share')
+      if($^O =~ /^(MSWin32|cygwin)/)
       {
-        if($^O eq 'MSWin32')
+        if($lib->install_type eq 'share')
         {
-          die 'fixme';
+          require File::Spec;
+          my $dir = File::Spec->catdir($lib->dist_dir, 'bin');
+          my $dh;
+          opendir($dh, $dir);
+          foreach my $file (readdir $dh)
+          {
+            next if $file =~ /^\./;
+            next unless $file =~ /\.dll$/i;
+            my $path = File::Spec->catfile($dir, $file);
+            push @libs, $path;
+          }
+          closedir $dh;
+          return;
         }
         elsif($^O eq 'cygwin')
         {
-          die 'fixme';
+          push @libs, 'cygarchive-2.dll';
+          return;
         }
       }
       push @libs, DynaLoader::dl_findfile(shellwords $lib->libs);
@@ -95,7 +108,7 @@ Archive::Libarchive::FFI::SweetLite
 
 =head1 VERSION
 
-version 0.07
+version 0.0701
 
 =head1 AUTHOR
 

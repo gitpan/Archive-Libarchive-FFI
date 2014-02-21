@@ -12,16 +12,16 @@ my %module_build_args = (
   },
   "configure_requires" => {
     "Alien::Libarchive" => 0,
-    "FFI::Raw" => "0.24",
+    "FFI::Raw" => "0.28",
     "Module::Build" => "0.3601",
-    "Module::Build::FFI" => 0
+    "Module::Build::FFI" => "0.04"
   },
   "dist_abstract" => "Perl bindings to libarchive via FFI",
   "dist_author" => [
     "Graham Ollis <plicease\@cpan.org>"
   ],
   "dist_name" => "Archive-Libarchive-FFI",
-  "dist_version" => "0.07",
+  "dist_version" => "0.0701",
   "license" => "perl",
   "module_name" => "Archive::Libarchive::FFI",
   "recommends" => {},
@@ -30,7 +30,7 @@ my %module_build_args = (
     "Alien::Libarchive" => 0,
     "Exporter::Tidy" => 0,
     "FFI::Raw" => "0.24",
-    "FFI::Util" => 0,
+    "FFI::Util" => "0.06",
     "perl" => "5.010"
   },
   "script_files" => [],

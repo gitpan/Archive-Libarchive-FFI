@@ -22,9 +22,9 @@
       "configure" : {
          "requires" : {
             "Alien::Libarchive" : "0",
-            "FFI::Raw" : "0.24",
+            "FFI::Raw" : "0.28",
             "Module::Build" : "0.3601",
-            "Module::Build::FFI" : "0"
+            "Module::Build::FFI" : "0.04"
          }
       },
       "runtime" : {
@@ -32,7 +32,7 @@
             "Alien::Libarchive" : "0",
             "Exporter::Tidy" : "0",
             "FFI::Raw" : "0.24",
-            "FFI::Util" : "0",
+            "FFI::Util" : "0.06",
             "perl" : "5.010"
          }
       },
@@ -54,6 +54,6 @@
          "web" : "https://github.com/plicease/archive-libarchive-ffi"
       }
    },
-   "version" : "0.07"
+   "version" : "0.0701"
 }
 
