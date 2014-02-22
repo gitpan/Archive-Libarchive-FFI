@@ -3,7 +3,7 @@ package Archive::Libarchive::FFI::Constant;
 use strict;
 use warnings;
 
-our $VERSION = '0.0701'; # VERSION
+our $VERSION = '0.0702'; # VERSION
 
 package
   Archive::Libarchive::FFI;
@@ -164,7 +164,7 @@ Archive::Libarchive::FFI::Constant
 
 =head1 VERSION
 
-version 0.0701
+version 0.0702
 
 =head1 SYNOPSIS
 
