@@ -31,7 +31,7 @@
          "requires" : {
             "Alien::Libarchive" : "0",
             "Exporter::Tidy" : "0",
-            "FFI::Raw" : "0.24",
+            "FFI::Raw" : "0.28",
             "FFI::Util" : "0.06",
             "perl" : "5.010"
          }
@@ -54,6 +54,6 @@
          "web" : "https://github.com/plicease/archive-libarchive-ffi"
       }
    },
-   "version" : "0.0702"
+   "version" : "0.0703"
 }
 

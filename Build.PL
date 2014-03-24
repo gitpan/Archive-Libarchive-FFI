@@ -21,7 +21,7 @@ my %module_build_args = (
     "Graham Ollis <plicease\@cpan.org>"
   ],
   "dist_name" => "Archive-Libarchive-FFI",
-  "dist_version" => "0.0702",
+  "dist_version" => "0.0703",
   "license" => "perl",
   "module_name" => "Archive::Libarchive::FFI",
   "recommends" => {},
@@ -29,7 +29,7 @@ my %module_build_args = (
   "requires" => {
     "Alien::Libarchive" => 0,
     "Exporter::Tidy" => 0,
-    "FFI::Raw" => "0.24",
+    "FFI::Raw" => "0.28",
     "FFI::Util" => "0.06",
     "perl" => "5.010"
   },

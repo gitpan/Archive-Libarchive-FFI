@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 # ABSTRACT: Libarchive callbacks
-our $VERSION = '0.0702'; # VERSION
+our $VERSION = '0.0703'; # VERSION
 
 package
   Archive::Libarchive::FFI;
@@ -74,7 +74,7 @@ my $mywrite = FFI::Raw::Callback->new(sub
     return ARCHIVE_FATAL();
   }
   $status;
-}, _int, _ptr, _ptr, _ptr, _int64);
+}, _int, _ptr, _ptr, _ptr, _size_t);
 
 my $myread = FFI::Raw::Callback->new(sub
 {
@@ -309,7 +309,7 @@ Archive::Libarchive::FFI::Callback - Libarchive callbacks
 
 =head1 VERSION
 
-version 0.0702
+version 0.0703
 
 =head1 SYNOPSIS
 

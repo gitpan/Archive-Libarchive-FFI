@@ -20,11 +20,11 @@ name: Archive-Libarchive-FFI
 requires:
   Alien::Libarchive: '0'
   Exporter::Tidy: '0'
-  FFI::Raw: '0.24'
+  FFI::Raw: '0.28'
   FFI::Util: '0.06'
   perl: '5.010'
 resources:
   bugtracker: https://github.com/plicease/archive-libarchive-ffi/issues
   homepage: http://perl.wdlabs.com/Archive-Libarchive-FFI/
   repository: git://github.com/plicease/archive-libarchive-ffi.git
-version: '0.0702'
+version: '0.0703'
