@@ -108,7 +108,7 @@ Archive::Libarchive::FFI::SweetLite
 
 =head1 VERSION
 
-version 0.0703
+version 0.0704
 
 =head1 AUTHOR
 
