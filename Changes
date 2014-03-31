@@ -1,5 +1,8 @@
 Revision history for Archive-Libarchive-FFI
 
+0.0706    2014-03-31 11:10:49 -0400
+  - fix for OpenBSD
+
 0.0705    2014-03-27 12:59:38 -0400
   - for libarchive 2.x, use our own Perl implementation of archive_read_open_memory
     as interfacing with the C version is causing SIGSEGV.

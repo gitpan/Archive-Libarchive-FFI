@@ -14,7 +14,7 @@ Archive::Libarchive::FFI::Function - libarchive function reference
 
 =head1 VERSION
 
-version 0.0705
+version 0.0706
 
 =head1 SYNOPSIS
 

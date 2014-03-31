@@ -17,7 +17,6 @@ use FFI::Util qw(
   scalar_to_buffer
   deref_int_get
   deref_str_get
-  locate_module_share_lib
   :types
 );
 
@@ -39,12 +38,7 @@ BEGIN {
 }
 
 # ABSTRACT: Perl bindings to libarchive via FFI
-our $VERSION = '0.0705'; # VERSION
-
-ffi_lib do {
-  my $file = locate_module_share_lib();
-  \$file;
-};
+our $VERSION = '0.0706'; # VERSION
 
 ffi_lib(Alien::Libarchive->new);
 
@@ -608,7 +602,7 @@ __END__
 
 =pod
 
-=encoding UTF-8
+=encoding utf-8
 
 =head1 NAME
 
@@ -616,7 +610,7 @@ Archive::Libarchive::FFI - Perl bindings to libarchive via FFI
 
 =head1 VERSION
 
-version 0.0705
+version 0.0706
 
 =head1 SYNOPSIS
 
