@@ -27,4 +27,4 @@ resources:
   bugtracker: https://github.com/plicease/Archive-Libarchive-FFI/issues
   homepage: http://perl.wdlabs.com/Archive-Libarchive-FFI
   repository: git://github.com/plicease/Archive-Libarchive-FFI.git
-version: '0.0800'
+version: '0.0801'

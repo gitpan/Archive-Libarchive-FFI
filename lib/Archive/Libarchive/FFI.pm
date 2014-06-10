@@ -38,7 +38,7 @@ BEGIN {
 }
 
 # ABSTRACT: Perl bindings to libarchive via FFI
-our $VERSION = '0.0800'; # VERSION
+our $VERSION = '0.0801'; # VERSION
 
 if(Alien::Libarchive->isa('Alien::Base'))
 {
@@ -617,7 +617,7 @@ Archive::Libarchive::FFI - Perl bindings to libarchive via FFI
 
 =head1 VERSION
 
-version 0.0800
+version 0.0801
 
 =head1 SYNOPSIS
 
