@@ -38,9 +38,16 @@ BEGIN {
 }
 
 # ABSTRACT: Perl bindings to libarchive via FFI
-our $VERSION = '0.0706'; # VERSION
+our $VERSION = '0.0800'; # VERSION
 
-ffi_lib(Alien::Libarchive->new);
+if(Alien::Libarchive->isa('Alien::Base'))
+{
+  ffi_lib(Alien::Libarchive->new);
+}
+else
+{
+  ffi_lib(\$_) for Alien::Libarchive->new->dlls;
+}
 
 require Archive::Libarchive::FFI::Constant;
 
@@ -602,7 +609,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -610,7 +617,7 @@ Archive::Libarchive::FFI - Perl bindings to libarchive via FFI
 
 =head1 VERSION
 
-version 0.0706
+version 0.0800
 
 =head1 SYNOPSIS
 

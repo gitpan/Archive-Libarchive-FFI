@@ -11,7 +11,7 @@ configure_requires:
   Module::Build: '0.3601'
   Module::Build::FFI: '0.04'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.014, CPAN::Meta::Converter version 2.140640'
+generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141170'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -24,7 +24,7 @@ requires:
   FFI::Util: '0.06'
   perl: '5.010'
 resources:
-  bugtracker: https://github.com/plicease/archive-libarchive-ffi/issues
-  homepage: http://perl.wdlabs.com/Archive-Libarchive-FFI/
-  repository: git://github.com/plicease/archive-libarchive-ffi.git
-version: '0.0706'
+  bugtracker: https://github.com/plicease/Archive-Libarchive-FFI/issues
+  homepage: http://perl.wdlabs.com/Archive-Libarchive-FFI
+  repository: git://github.com/plicease/Archive-Libarchive-FFI.git
+version: '0.0800'

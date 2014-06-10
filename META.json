@@ -4,7 +4,7 @@
       "Graham Ollis <plicease@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.014, CPAN::Meta::Converter version 2.140640",
+   "generated_by" : "Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141170",
    "license" : [
       "perl_5"
    ],
@@ -45,15 +45,15 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/plicease/archive-libarchive-ffi/issues"
+         "web" : "https://github.com/plicease/Archive-Libarchive-FFI/issues"
       },
-      "homepage" : "http://perl.wdlabs.com/Archive-Libarchive-FFI/",
+      "homepage" : "http://perl.wdlabs.com/Archive-Libarchive-FFI",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/plicease/archive-libarchive-ffi.git",
-         "web" : "https://github.com/plicease/archive-libarchive-ffi"
+         "url" : "git://github.com/plicease/Archive-Libarchive-FFI.git",
+         "web" : "https://github.com/plicease/Archive-Libarchive-FFI"
       }
    },
-   "version" : "0.0706"
+   "version" : "0.0800"
 }
 
