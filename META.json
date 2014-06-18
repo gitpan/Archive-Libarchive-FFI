@@ -3,8 +3,8 @@
    "author" : [
       "Graham Ollis <plicease@cpan.org>"
    ],
-   "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141170",
+   "dynamic_config" : 1,
+   "generated_by" : "Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141520",
    "license" : [
       "perl_5"
    ],
@@ -21,7 +21,7 @@
       },
       "configure" : {
          "requires" : {
-            "Alien::Libarchive" : "0",
+            "Alien::Libarchive::Installer" : "0.06",
             "FFI::Raw" : "0.29",
             "Module::Build" : "0.3601",
             "Module::Build::FFI" : "0.04"
@@ -29,7 +29,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Alien::Libarchive" : "0",
+            "Alien::Libarchive::Installer" : "0.06",
             "Exporter::Tidy" : "0",
             "FFI::Raw" : "0.29",
             "FFI::Util" : "0.06",
@@ -38,11 +38,11 @@
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0"
+            "Test::More" : "0.94"
          }
       }
    },
-   "release_status" : "stable",
+   "release_status" : "testing",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/plicease/Archive-Libarchive-FFI/issues"
@@ -54,6 +54,6 @@
          "web" : "https://github.com/plicease/Archive-Libarchive-FFI"
       }
    },
-   "version" : "0.0801"
+   "version" : "0.0801_01"
 }
 

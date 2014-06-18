@@ -50,6 +50,7 @@ inc/Linux-Distribution/t/rhel6/redhat-release
 inc/Linux-Distribution/t/scientific6.t
 inc/Linux-Distribution/t/scientific6/files
 inc/Linux-Distribution/t/scientific6/redhat-release
+inc/My/ModuleBuild.pm
 inc/SeeAlso.pm
 inc/constants.txt
 inc/extract_string.pl

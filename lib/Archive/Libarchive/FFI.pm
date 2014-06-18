@@ -2,6 +2,7 @@ package Archive::Libarchive::FFI;
 
 use strict;
 use warnings;
+use Alien::Libarchive::Installer;
 use Exporter::Tidy ();
 use Encode ();
 use Carp qw( croak );
@@ -22,9 +23,6 @@ use FFI::Util qw(
 
 BEGIN {
 
-  require Alien::Libarchive;
-  Alien::Libarchive->import unless $^O eq 'MSWin32';
-
   if(eval { require FFI::Sweet })
   {
     FFI::Sweet->import;
@@ -38,16 +36,9 @@ BEGIN {
 }
 
 # ABSTRACT: Perl bindings to libarchive via FFI
-our $VERSION = '0.0801'; # VERSION
+our $VERSION = '0.0801_01'; # VERSION
 
-if(Alien::Libarchive->isa('Alien::Base'))
-{
-  ffi_lib(Alien::Libarchive->new);
-}
-else
-{
-  ffi_lib(\$_) for Alien::Libarchive->new->dlls;
-}
+ffi_lib(\$_) for Alien::Libarchive::Installer->system_install( test => 'ffi' )->dlls;
 
 require Archive::Libarchive::FFI::Constant;
 
@@ -617,7 +608,7 @@ Archive::Libarchive::FFI - Perl bindings to libarchive via FFI
 
 =head1 VERSION
 
-version 0.0801
+version 0.0801_01
 
 =head1 SYNOPSIS
 

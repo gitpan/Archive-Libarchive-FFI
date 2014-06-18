@@ -1,5 +1,9 @@
 Revision history for Archive-Libarchive-FFI
 
+0.0801_01 2014-06-18 15:55:44 -0400
+  - use Alien::Libarchive::Installer if possible
+    instead of the heavier weight Alien::Libarchive
+
 0.0801    2014-06-10 15:40:01 -0400
   - Fix bundled dists
 

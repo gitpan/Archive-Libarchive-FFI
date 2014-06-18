@@ -4,14 +4,14 @@ use strict;
 use warnings;
 
 use Module::Build 0.3601;
-
+use lib qw{inc}; use My::ModuleBuild;
 
 my %module_build_args = (
   "build_requires" => {
     "Module::Build" => "0.3601"
   },
   "configure_requires" => {
-    "Alien::Libarchive" => 0,
+    "Alien::Libarchive::Installer" => "0.06",
     "FFI::Raw" => "0.29",
     "Module::Build" => "0.3601",
     "Module::Build::FFI" => "0.04"
@@ -21,13 +21,13 @@ my %module_build_args = (
     "Graham Ollis <plicease\@cpan.org>"
   ],
   "dist_name" => "Archive-Libarchive-FFI",
-  "dist_version" => "0.0801",
+  "dist_version" => "0.0801_01",
   "license" => "perl",
   "module_name" => "Archive::Libarchive::FFI",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
-    "Alien::Libarchive" => 0,
+    "Alien::Libarchive::Installer" => "0.06",
     "Exporter::Tidy" => 0,
     "FFI::Raw" => "0.29",
     "FFI::Util" => "0.06",
@@ -35,14 +35,14 @@ my %module_build_args = (
   },
   "script_files" => [],
   "test_requires" => {
-    "Test::More" => 0
+    "Test::More" => "0.94"
   }
 );
 
 
 my %fallback_build_requires = (
   "Module::Build" => "0.3601",
-  "Test::More" => 0
+  "Test::More" => "0.94"
 );
 
 
@@ -51,6 +51,6 @@ unless ( eval { Module::Build->VERSION(0.4004) } ) {
   $module_build_args{build_requires} = \%fallback_build_requires;
 }
 
-my $build = Module::Build->new(%module_build_args);
+my $build = My::ModuleBuild->new(%module_build_args);
 
 $build->create_build_script;
