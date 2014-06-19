@@ -11,7 +11,7 @@ my %module_build_args = (
     "Module::Build" => "0.3601"
   },
   "configure_requires" => {
-    "Alien::Libarchive::Installer" => "0.06",
+    "Alien::Libarchive::Installer" => "0.07",
     "FFI::Raw" => "0.29",
     "Module::Build" => "0.3601",
     "Module::Build::FFI" => "0.04"
@@ -21,13 +21,13 @@ my %module_build_args = (
     "Graham Ollis <plicease\@cpan.org>"
   ],
   "dist_name" => "Archive-Libarchive-FFI",
-  "dist_version" => "0.0801_01",
+  "dist_version" => "0.0802",
   "license" => "perl",
   "module_name" => "Archive::Libarchive::FFI",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
-    "Alien::Libarchive::Installer" => "0.06",
+    "Alien::Libarchive::Installer" => "0.07",
     "Exporter::Tidy" => 0,
     "FFI::Raw" => "0.29",
     "FFI::Util" => "0.06",

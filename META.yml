@@ -6,19 +6,19 @@ build_requires:
   Module::Build: '0.3601'
   Test::More: '0.94'
 configure_requires:
-  Alien::Libarchive::Installer: '0.06'
+  Alien::Libarchive::Installer: '0.07'
   FFI::Raw: '0.29'
   Module::Build: '0.3601'
   Module::Build::FFI: '0.04'
 dynamic_config: 1
-generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141520'
+generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141170'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: '1.4'
 name: Archive-Libarchive-FFI
 requires:
-  Alien::Libarchive::Installer: '0.06'
+  Alien::Libarchive::Installer: '0.07'
   Exporter::Tidy: '0'
   FFI::Raw: '0.29'
   FFI::Util: '0.06'
@@ -27,4 +27,4 @@ resources:
   bugtracker: https://github.com/plicease/Archive-Libarchive-FFI/issues
   homepage: http://perl.wdlabs.com/Archive-Libarchive-FFI
   repository: git://github.com/plicease/Archive-Libarchive-FFI.git
-version: 0.0801_01
+version: '0.0802'

@@ -36,7 +36,7 @@ BEGIN {
 }
 
 # ABSTRACT: Perl bindings to libarchive via FFI
-our $VERSION = '0.0801_01'; # VERSION
+our $VERSION = '0.0802'; # VERSION
 
 ffi_lib(\$_) for Alien::Libarchive::Installer->system_install( test => 'ffi' )->dlls;
 
@@ -608,7 +608,7 @@ Archive::Libarchive::FFI - Perl bindings to libarchive via FFI
 
 =head1 VERSION
 
-version 0.0801_01
+version 0.0802
 
 =head1 SYNOPSIS
 
